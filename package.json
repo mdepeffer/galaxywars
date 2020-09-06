@@ -1,0 +1,23 @@
+{
+  "name": "galaxywars",
+  "version": "1.0.0",
+  "description": "A space shooty game",
+  "main": "app.js",
+  "scripts": {
+    "compile": "webpack --mode development",
+    "build": "webpack --mode production",
+    "dev": "webpack-dev-server --mode development --open"
+  },
+  "author": "Mitch de Peffer",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.10.3",
+    "@babel/preset-env": "^7.10.3",
+    "babel-loader": "^8.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "standard": "^14.3.4",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
