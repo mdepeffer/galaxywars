@@ -16,4 +16,8 @@ export default class Bitmap {
   get context () {
     return this.__context
   }
+
+  get canvas () {
+    return this.__canvas
+  }
 }

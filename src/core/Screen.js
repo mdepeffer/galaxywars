@@ -17,4 +17,11 @@ export default class Screen {
   clear () {
     this.context.clearRect(0, 0, this.width, this.height)
   }
+
+  fill (hex = "#000000") {
+    this.context.save()
+    this.context.fillStyle = hex
+    this.context.fillRect(0, 0, this.width, this.height)
+    this.context.restore()
+  }
 }

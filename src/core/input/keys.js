@@ -2,6 +2,6 @@ export default {
   UP: 38,
   DOWN: 40,
   LEFT: 37,
-  RIGHT: 49,
+  RIGHT: 39,
   SPACE: 32
 }
