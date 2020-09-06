@@ -1,6 +1,11 @@
 export default class Screen {
-  constructor (gameCanvas, width, height) {
-    this.canvas = gameCanvas
+  constructor (width, height, canvas) {
+    if (canvas) {
+      this.canvas = canvas
+    } else {
+      this.canvas = document.createElement('canvas')
+    }
+    
     this.width = width
     this.height = height
 

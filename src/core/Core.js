@@ -5,7 +5,7 @@ import AssetLoader from './assets/AssetLoader'
 
 export default class Core {
   constructor (gameCanvas, width, height) {
-    this.screen  = new Screen(gameCanvas, width, height)
+    this.screen  = new Screen(width, height, gameCanvas)
     this.timer = new GameTimer()
     this.input = {
       keyboard: new KeyboardInput()

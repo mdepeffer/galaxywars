@@ -7,14 +7,12 @@ const core = new Core(document.querySelector('#gamewindow'), 100, 100)
 
 window.core = core
 
-function tick (delta) {
+core.ontick = function (delta) {
   const input = core.input.keyboard
   if (input.keyHold(input.KEYS.SPACE)) {
     console.log('space!')
   }
 }
-
-core.ontick = tick
 
 core.assets.setImageAssets({
   ship: shipImage,
