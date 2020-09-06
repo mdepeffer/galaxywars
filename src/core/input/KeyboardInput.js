@@ -1,7 +1,10 @@
+import keys from './keys'
+
 export default class KeyboardInput {
   constructor () {
     this.initializeValues()
     this.initializeEvents()
+    this.KEYS = keys
   }
 
   keyDown(keycode) {
