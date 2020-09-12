@@ -2,6 +2,7 @@ import GameTimer from './GameTimer'
 import Screen from './Screen'
 import KeyboardInput from './input/KeyboardInput'
 import AssetLoader from './assets/AssetLoader'
+import Renderer from './Renderer'
 
 export default class Core {
   constructor (gameCanvas, width, height) {
@@ -11,6 +12,7 @@ export default class Core {
       keyboard: new KeyboardInput()
     }
     this.assets = new AssetLoader()
+    this.renderer = new Renderer(this.screen)
 
     this.ontick = () => {}
 

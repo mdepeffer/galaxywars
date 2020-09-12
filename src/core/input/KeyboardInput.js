@@ -38,7 +38,7 @@ export default class KeyboardInput {
   __handleKeyDown (e) {
     const key = e.keyCode
 
-    if (key !== 116) e.preventDefault()
+    if (key !== 116 && key !== 123) e.preventDefault()
 
     if (this.__keyshold.indexOf(key) === -1) this.__addUniqueToList(key, this.__keysdown)
   }
